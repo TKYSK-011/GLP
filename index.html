@@ -116,7 +116,8 @@
 
         <!-- Content -->
         <div class="relative z-10 text-center px-4 py-4 animate-fade-in-up">
-            <h1 class="text-6xl md:text-8xl font-montserrat font-extrabold text-white mb-4 tracking-tight drop-shadow-lg">
+            <h1
+                class="text-6xl md:text-8xl font-montserrat font-extrabold text-white mb-4 tracking-tight drop-shadow-lg">
                 エンジニアの遊び場
             </h1>
             <p class="text-xl md:text-2xl text-blue-100 font-light tracking-widest mb-8">
@@ -127,7 +128,8 @@
                     class="px-8 py-3 bg-white/10 backdrop-blur-sm border border-white/50 text-white hover:bg-white hover:text-brand-dark transition duration-300 rounded-full font-medium">
                     もっと知る
                 </a>
-                <a href="https://www.youtube.com/@%E6%A0%AA%E5%BC%8F%E4%BC%9A%E7%A4%BE%E3%82%B0%E3%83%AD%E3%83%BC%E3%82%B9%E3%83%AA%E3%83%B3%E3%82%AF" target="_blank"
+                <a href="https://www.youtube.com/@%E6%A0%AA%E5%BC%8F%E4%BC%9A%E7%A4%BE%E3%82%B0%E3%83%AD%E3%83%BC%E3%82%B9%E3%83%AA%E3%83%B3%E3%82%AF"
+                    target="_blank"
                     class="px-8 py-3 bg-brand hover:bg-brand-accent text-white transition duration-300 rounded-full font-medium shadow-lg shadow-blue-500/30">
                     最新動画を見る
                 </a>
@@ -169,18 +171,18 @@
                 <!-- Channel Description -->
                 <div class="max-w-xl text-center md:text-left">
                     <h2 class="text-4xl font-montserrat font-bold mb-2">エンジニアの遊び場</h2>
-                    <p class="text-brand text-lg mb-6 tracking-widest font-light">会社YouTubeチャンネル</p>
+                    <p class="text-brand text-lg mb-6 tracking-widest font-light">株式会社グロースリンク YouTubeチャンネル</p>
 
                     <div class="space-y-4 text-slate-300 leading-relaxed mb-8">
                         <p>
-                            このチャンネルでは、エンジニアと営業の会社員が時間を作って遊ぶチャンネルです。IT用語解説からリアルな社員トーク、AI知識まで、幅広いコンテンツをお届けしています。
+                            このチャンネルでは会社PRやIT用語解説などのマジメなコンテンツだけでなく、グロースリンクの会社員が時間を作って、雑談やいろいろ遊ぶチャンネルです！
                         </p>
                         <p>
-                            IT業界に興味がある方、エンジニア志望の方に向けて、役立つ情報とリアルな会社の雰囲気を楽しく配信中。毎週更新していますので、ぜひチャンネル登録をお願いします！
+                            IT業界に興味がある方、エンジニア志望の方に向けて、役立つ情報とリアルな会社の雰囲気を楽しく配信中。毎週更新していますので、ぜひチャンネル登録と高評価をお願いします！
                         </p>
                     </div>
 
-                    <div class="flex flex-wrap justify-center md:justify-start gap-4">
+                    <!-- <div class="flex flex-wrap justify-center md:justify-start gap-4">
                         <a href="#"
                             class="w-10 h-10 rounded-full bg-slate-700 flex items-center justify-center hover:bg-[#1DA1F2] hover:text-white transition duration-300">
                             <i class="fab fa-twitter text-lg"></i>
@@ -197,7 +199,7 @@
                             class="w-10 h-10 rounded-full bg-slate-700 flex items-center justify-center hover:bg-pink-500 hover:text-white transition duration-300">
                             <i class="fab fa-instagram text-lg"></i>
                         </a>
-                    </div>
+                    </div> -->
                 </div>
             </div>
         </div>
@@ -215,23 +217,19 @@
             <div class="mb-12">
                 <h3 class="text-2xl font-bold text-slate-800 mb-6 flex items-center">
                     <i class="fas fa-bolt text-brand mr-3"></i>
-                    IT用語解説ショート
+                    ショート動画
                 </h3>
+                <!-- ショート動画グリッド -->
                 <div class="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-6xl mx-auto">
-                    <!-- Short Video 1 -->
-                    <div
-                        class="bg-slate-50 rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition duration-300 border border-slate-100 group cursor-pointer">
-                        <div
-                            class="aspect-[9/16] bg-slate-800 relative flex items-center justify-center overflow-hidden">
-                            <div
-                                class="absolute inset-0 bg-gradient-to-tr from-blue-600 to-purple-600 opacity-80 group-hover:opacity-100 transition duration-500">
-                            </div>
-                            <i class="fas fa-play text-4xl text-white relative z-10"></i>
-                            <div
-                                class="absolute top-3 left-3 bg-red-600 px-2 py-1 rounded text-white text-xs font-bold">
-                                SHORTS</div>
-                            <div class="absolute bottom-3 right-3 bg-black/70 text-white text-xs px-2 py-1 rounded">0:58
-                            </div>
+
+                    <div class="bg-slate-50 rounded-xl overflow-hidden shadow-lg border border-slate-100 group">
+                        <div class="aspect-[9/16] w-full bg-slate-800 relative">
+                            <iframe class="absolute inset-0 w-full h-full"
+                                src="https://www.youtube.com/shorts/uF2jh7lUEIY"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                allowfullscreen>
+                            </iframe>
                         </div>
                         <div class="p-3">
                             <h4 class="font-bold text-sm text-slate-800 mb-1">APIとは？</h4>
@@ -239,20 +237,14 @@
                         </div>
                     </div>
 
-                    <!-- Short Video 2 -->
-                    <div
-                        class="bg-slate-50 rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition duration-300 border border-slate-100 group cursor-pointer">
-                        <div
-                            class="aspect-[9/16] bg-slate-800 relative flex items-center justify-center overflow-hidden">
-                            <div
-                                class="absolute inset-0 bg-gradient-to-tr from-purple-600 to-pink-600 opacity-80 group-hover:opacity-100 transition duration-500">
-                            </div>
-                            <i class="fas fa-play text-4xl text-white relative z-10"></i>
-                            <div
-                                class="absolute top-3 left-3 bg-red-600 px-2 py-1 rounded text-white text-xs font-bold">
-                                SHORTS</div>
-                            <div class="absolute bottom-3 right-3 bg-black/70 text-white text-xs px-2 py-1 rounded">0:52
-                            </div>
+                    <div class="bg-slate-50 rounded-xl overflow-hidden shadow-lg border border-slate-100 group">
+                        <div class="aspect-[9/16] w-full bg-slate-800 relative">
+                            <iframe class="absolute inset-0 w-full h-full"
+                                src="https://www.youtube.com/shorts/uF2jh7lUEIY"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                allowfullscreen>
+                            </iframe>
                         </div>
                         <div class="p-3">
                             <h4 class="font-bold text-sm text-slate-800 mb-1">機械学習入門</h4>
@@ -260,20 +252,14 @@
                         </div>
                     </div>
 
-                    <!-- Short Video 3 -->
-                    <div
-                        class="bg-slate-50 rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition duration-300 border border-slate-100 group cursor-pointer">
-                        <div
-                            class="aspect-[9/16] bg-slate-800 relative flex items-center justify-center overflow-hidden">
-                            <div
-                                class="absolute inset-0 bg-gradient-to-tr from-emerald-500 to-teal-500 opacity-80 group-hover:opacity-100 transition duration-500">
-                            </div>
-                            <i class="fas fa-play text-4xl text-white relative z-10"></i>
-                            <div
-                                class="absolute top-3 left-3 bg-red-600 px-2 py-1 rounded text-white text-xs font-bold">
-                                SHORTS</div>
-                            <div class="absolute bottom-3 right-3 bg-black/70 text-white text-xs px-2 py-1 rounded">1:00
-                            </div>
+                    <div class="bg-slate-50 rounded-xl overflow-hidden shadow-lg border border-slate-100 group">
+                        <div class="aspect-[9/16] w-full bg-slate-800 relative">
+                            <iframe class="absolute inset-0 w-full h-full"
+                                src="https://www.youtube.com/shorts/uF2jh7lUEIY"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                allowfullscreen>
+                            </iframe>
                         </div>
                         <div class="p-3">
                             <h4 class="font-bold text-sm text-slate-800 mb-1">クラウドって？</h4>
@@ -281,26 +267,21 @@
                         </div>
                     </div>
 
-                    <!-- Short Video 4 -->
-                    <div
-                        class="bg-slate-50 rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition duration-300 border border-slate-100 group cursor-pointer">
-                        <div
-                            class="aspect-[9/16] bg-slate-800 relative flex items-center justify-center overflow-hidden">
-                            <div
-                                class="absolute inset-0 bg-gradient-to-tr from-orange-500 to-red-500 opacity-80 group-hover:opacity-100 transition duration-500">
-                            </div>
-                            <i class="fas fa-play text-4xl text-white relative z-10"></i>
-                            <div
-                                class="absolute top-3 left-3 bg-red-600 px-2 py-1 rounded text-white text-xs font-bold">
-                                SHORTS</div>
-                            <div class="absolute bottom-3 right-3 bg-black/70 text-white text-xs px-2 py-1 rounded">0:45
-                            </div>
+                    <div class="bg-slate-50 rounded-xl overflow-hidden shadow-lg border border-slate-100 group">
+                        <div class="aspect-[9/16] w-full bg-slate-800 relative">
+                            <iframe class="absolute inset-0 w-full h-full"
+                                src="https://www.youtube.com/shorts/8l-ftT1HPRQ"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                allowfullscreen>
+                            </iframe>
                         </div>
                         <div class="p-3">
                             <h4 class="font-bold text-sm text-slate-800 mb-1">Docker入門</h4>
                             <p class="text-xs text-slate-500">コンテナ技術</p>
                         </div>
                     </div>
+
                 </div>
             </div>
 
@@ -311,48 +292,34 @@
                 </h3>
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-6xl mx-auto">
                     <!-- Long Video 1 -->
-                    <div
-                        class="bg-slate-50 rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition duration-300 border border-slate-100 group cursor-pointer">
-                        <div
-                            class="aspect-video bg-slate-800 relative flex items-center justify-center overflow-hidden">
-                            <div
-                                class="absolute inset-0 bg-gradient-to-tr from-blue-600 to-cyan-600 opacity-80 group-hover:opacity-100 transition duration-500">
-                            </div>
-                            <i class="fas fa-play text-5xl text-white relative z-10"></i>
-                            <div class="absolute bottom-3 right-3 bg-black/70 text-white text-xs px-2 py-1 rounded">
-                                15:30</div>
+                    <div class="bg-slate-50 rounded-2xl overflow-hidden shadow-lg border border-slate-100 group">
+                        <div class="aspect-video w-full bg-slate-800 relative">
+                            <iframe class="absolute inset-0 w-full h-full"
+                                src="https://www.youtube.com/embed/VIDEO_ID_5?rel=0&modestbranding=1"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                allowfullscreen>
+                            </iframe>
                         </div>
                         <div class="p-5">
                             <h4 class="text-lg font-bold text-slate-800 mb-2">エンジニアのリアルな1日</h4>
                             <p class="text-sm text-slate-500 mb-3">朝の出社から退社まで密着</p>
-                            <div class="flex items-center gap-4 text-xs text-slate-400">
-                                <span><i class="fas fa-eye mr-1"></i>25K</span>
-                                <span><i class="fas fa-thumbs-up mr-1"></i>1.2K</span>
-                                <span><i class="fas fa-calendar mr-1"></i>3日前</span>
-                            </div>
                         </div>
                     </div>
 
                     <!-- Long Video 2 -->
-                    <div
-                        class="bg-slate-50 rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition duration-300 border border-slate-100 group cursor-pointer">
-                        <div
-                            class="aspect-video bg-slate-800 relative flex items-center justify-center overflow-hidden">
-                            <div
-                                class="absolute inset-0 bg-gradient-to-tr from-purple-600 to-pink-600 opacity-80 group-hover:opacity-100 transition duration-500">
-                            </div>
-                            <i class="fas fa-play text-5xl text-white relative z-10"></i>
-                            <div class="absolute bottom-3 right-3 bg-black/70 text-white text-xs px-2 py-1 rounded">
-                                20:15</div>
+                    <div class="bg-slate-50 rounded-2xl overflow-hidden shadow-lg border border-slate-100 group">
+                        <div class="aspect-video w-full bg-slate-800 relative">
+                            <iframe class="absolute inset-0 w-full h-full"
+                                src="https://www.youtube.com/embed/VIDEO_ID_6?rel=0&modestbranding=1"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                allowfullscreen>
+                            </iframe>
                         </div>
                         <div class="p-5">
                             <h4 class="text-lg font-bold text-slate-800 mb-2">新入社員に聞いてみた</h4>
                             <p class="text-sm text-slate-500 mb-3">入社の決め手とギャップは？</p>
-                            <div class="flex items-center gap-4 text-xs text-slate-400">
-                                <span><i class="fas fa-eye mr-1"></i>18K</span>
-                                <span><i class="fas fa-thumbs-up mr-1"></i>890</span>
-                                <span><i class="fas fa-calendar mr-1"></i>1週間前</span>
-                            </div>
                         </div>
                     </div>
                 </div>
@@ -366,6 +333,7 @@
             </div>
         </div>
     </section>
+
 
     <!-- 4. Members Section -->
     <section id="members" class="py-24 bg-slate-50">
@@ -468,7 +436,8 @@
                 </p>
 
                 <div class="flex flex-col md:flex-row justify-center items-center gap-4 mb-12">
-                    <a href="https://www.youtube.com/@%E6%A0%AA%E5%BC%8F%E4%BC%9A%E7%A4%BE%E3%82%B0%E3%83%AD%E3%83%BC%E3%82%B9%E3%83%AA%E3%83%B3%E3%82%AF" target="_blank"
+                    <a href="https://www.youtube.com/@%E6%A0%AA%E5%BC%8F%E4%BC%9A%E7%A4%BE%E3%82%B0%E3%83%AD%E3%83%BC%E3%82%B9%E3%83%AA%E3%83%B3%E3%82%AF"
+                        target="_blank"
                         class="px-8 py-4 bg-red-600 hover:bg-red-700 text-white font-bold rounded-full transition duration-300 shadow-lg hover:shadow-xl flex items-center text-lg">
                         <i class="fab fa-youtube mr-3 text-2xl"></i> チャンネル登録する
                     </a>
