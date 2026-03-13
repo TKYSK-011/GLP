@@ -16,9 +16,10 @@
                 extend: {
                     colors: {
                         brand: {
-                            light: '#E0F2FE',
+                            light: '#7DD3FC',
                             DEFAULT: '#0EA5E9',
                             dark: '#0F172A',
+                            darker: '#080E1A',
                             accent: '#6366F1'
                         }
                     },
@@ -31,20 +32,17 @@
         }
     </script>
 </head>
-<body class="bg-slate-50 text-slate-800 font-sans antialiased">
+<body class="bg-brand-dark text-slate-200 font-sans antialiased">
 
     <!-- Header / Navigation -->
-    <header class="fixed w-full z-50 transition-all duration-300 bg-brand-dark/95 backdrop-blur-md" id="main-header">
+    <header class="fixed w-full z-50 transition-all duration-300 bg-brand-darker/95 backdrop-blur-md" id="main-header">
         <div class="container mx-auto px-6 py-4 flex justify-between items-center">
-            <a href="index.html" class="text-2xl font-montserrat font-bold tracking-tighter text-white z-50 relative">虎尾弩我流</a>
-            
+            <a href="../index.html" class="text-2xl font-montserrat font-bold tracking-tighter text-white z-50 relative">虎尾弩我流</a>
+
             <!-- Desktop Nav -->
             <nav class="hidden md:flex space-x-8">
-                <a href="index.html#about" class="text-white hover:text-brand-light transition duration-300 font-medium text-sm tracking-wide">チャンネル紹介</a>
-                <a href="index.html#videos" class="text-white hover:text-brand-light transition duration-300 font-medium text-sm tracking-wide">動画</a>
-                <a href="index.html#members" class="text-white hover:text-brand-light transition duration-300 font-medium text-sm tracking-wide">メンバー</a>
-                <a href="index.html#blog" class="text-white hover:text-brand-light transition duration-300 font-medium text-sm tracking-wide">ブログ</a>
-                <a href="index.html#cta" class="text-white hover:text-brand-light transition duration-300 font-medium text-sm tracking-wide">登録</a>
+                <a href="../index.html#videos" class="text-slate-400 hover:text-white transition duration-300 font-medium text-sm tracking-wide">動画</a>
+                <a href="../blog-list.html" class="text-white hover:text-brand-light transition duration-300 font-medium text-sm tracking-wide">ブログ</a>
             </nav>
 
             <!-- Mobile Menu Button -->
@@ -54,48 +52,45 @@
         </div>
 
         <!-- Mobile Nav Overlay -->
-        <div id="mobile-menu" class="fixed inset-0 bg-brand-dark/95 backdrop-blur-md transform translate-x-full transition-transform duration-300 flex flex-col justify-center items-center space-y-8 md:hidden">
-            <a href="index.html#about" class="text-white text-2xl font-montserrat hover:text-brand transition">チャンネル紹介</a>
-            <a href="index.html#videos" class="text-white text-2xl font-montserrat hover:text-brand transition">動画</a>
-            <a href="index.html#members" class="text-white text-2xl font-montserrat hover:text-brand transition">メンバー</a>
-            <a href="index.html#blog" class="text-white text-2xl font-montserrat hover:text-brand transition">ブログ</a>
-            <a href="index.html#cta" class="text-white text-2xl font-montserrat hover:text-brand transition">登録</a>
+        <div id="mobile-menu" class="fixed inset-0 bg-brand-darker/95 backdrop-blur-md transform translate-x-full transition-transform duration-300 flex flex-col justify-center items-center space-y-8 md:hidden">
+            <a href="../index.html#videos" class="text-white text-2xl font-montserrat hover:text-brand transition">動画</a>
+            <a href="../index.html#blog" class="text-white text-2xl font-montserrat hover:text-brand transition">ブログ</a>
         </div>
     </header>
 
     <!-- Breadcrumb -->
-    <section class="pt-32 pb-8 bg-slate-50">
+    <section class="pt-32 pb-8 bg-brand-darker">
         <div class="container mx-auto px-6">
             <nav class="text-sm text-slate-500">
-                <a href="index.html" class="hover:text-brand transition">ホーム</a>
+                <a href="../index.html" class="hover:text-brand transition">ホーム</a>
                 <span class="mx-2">/</span>
-                <a href="index.html#blog" class="hover:text-brand transition">ブログ</a>
+                <a href="../blog-list.html" class="hover:text-brand transition">ブログ一覧</a>
                 <span class="mx-2">/</span>
-                <span class="text-slate-800">記事詳細</span>
+                <span class="text-slate-300">記事詳細</span>
             </nav>
         </div>
     </section>
 
     <!-- Blog Content -->
-    <article class="pb-24 bg-slate-50">
+    <article class="pb-24 bg-brand-dark">
         <div class="container mx-auto px-6 max-w-4xl">
             <!-- Article Header -->
-            <header class="mb-12">
+            <header class="mb-12 pt-8">
                 <div class="flex items-center gap-3 mb-6">
                     <span class="px-4 py-2 bg-brand text-white text-sm font-bold rounded-full">プロンプト解説</span>
                     <span class="text-slate-500"><i class="far fa-calendar mr-2"></i>2026.01.20</span>
                     <span class="text-slate-500"><i class="fas fa-eye mr-2"></i>2.5K 閲覧</span>
                 </div>
-                <h1 class="text-4xl md:text-5xl font-montserrat font-bold text-slate-900 mb-6 leading-tight">
+                <h1 class="text-4xl md:text-5xl font-montserrat font-bold text-white mb-6 leading-tight">
                     エンジニアのリアルな1日 - 撮影プロンプトと演出解説
                 </h1>
-                <p class="text-xl text-slate-600 leading-relaxed">
+                <p class="text-xl text-slate-400 leading-relaxed">
                     「エンジニアのリアルな1日」の動画制作で使用したプロンプト設計と演出のポイントを詳しく解説します。視聴者に共感してもらえる構成作りのコツや、カメラアングルの工夫について紹介。
                 </p>
             </header>
 
             <!-- Featured Image -->
-            <div class="mb-12 rounded-2xl overflow-hidden shadow-lg">
+            <div class="mb-12 rounded-2xl overflow-hidden shadow-lg shadow-brand/10">
                 <div class="aspect-video bg-gradient-to-br from-blue-600 to-purple-600 flex items-center justify-center">
                     <i class="fas fa-video text-9xl text-white/80"></i>
                 </div>
@@ -103,27 +98,27 @@
 
             <!-- Article Body -->
             <div class="prose prose-lg max-w-none">
-                <h2 class="text-3xl font-bold text-slate-900 mb-4 mt-12">はじめに</h2>
-                <p class="text-slate-700 leading-relaxed mb-6">
+                <h2 class="text-3xl font-bold text-white mb-4 mt-12">はじめに</h2>
+                <p class="text-slate-300 leading-relaxed mb-6">
                     YouTubeチャンネル「虎尾弩我流」で最も人気のある「エンジニアのリアルな1日」シリーズ。この動画では、朝の出社から退社まで、エンジニアの日常を密着取材しています。
                 </p>
-                <p class="text-slate-700 leading-relaxed mb-6">
+                <p class="text-slate-300 leading-relaxed mb-6">
                     今回は、この動画の制作過程で使用したプロンプト設計と演出のテクニックを詳しく解説します。動画制作に興味がある方、プロンプトエンジニアリングを学びたい方の参考になれば幸いです。
                 </p>
 
-                <h2 class="text-3xl font-bold text-slate-900 mb-4 mt-12">動画コンセプトの設計</h2>
-                <p class="text-slate-700 leading-relaxed mb-6">
+                <h2 class="text-3xl font-bold text-white mb-4 mt-12">動画コンセプトの設計</h2>
+                <p class="text-slate-300 leading-relaxed mb-6">
                     まず最初に重要なのは、動画のコンセプトを明確にすることです。この動画では以下のポイントを重視しました：
                 </p>
-                <ul class="list-disc pl-6 space-y-3 text-slate-700 mb-6">
-                    <li><strong>リアリティ</strong>：過度に演出せず、ありのままの姿を伝える</li>
-                    <li><strong>共感性</strong>：視聴者が「自分もこんな感じかも」と思える内容</li>
-                    <li><strong>テンポ感</strong>：15分という尺に収まるよう、飽きさせない編集</li>
-                    <li><strong>情報価値</strong>：エンジニアの業務内容が具体的に分かる</li>
+                <ul class="list-disc pl-6 space-y-3 text-slate-300 mb-6">
+                    <li><strong class="text-slate-100">リアリティ</strong>：過度に演出せず、ありのままの姿を伝える</li>
+                    <li><strong class="text-slate-100">共感性</strong>：視聴者が「自分もこんな感じかも」と思える内容</li>
+                    <li><strong class="text-slate-100">テンポ感</strong>：15分という尺に収まるよう、飽きさせない編集</li>
+                    <li><strong class="text-slate-100">情報価値</strong>：エンジニアの業務内容が具体的に分かる</li>
                 </ul>
 
-                <h2 class="text-3xl font-bold text-slate-900 mb-4 mt-12">撮影プロンプトの例</h2>
-                <div class="bg-slate-800 text-slate-100 p-6 rounded-xl mb-6 font-mono text-sm overflow-x-auto">
+                <h2 class="text-3xl font-bold text-white mb-4 mt-12">撮影プロンプトの例</h2>
+                <div class="bg-slate-900 border border-slate-700/50 text-slate-100 p-6 rounded-xl mb-6 font-mono text-sm overflow-x-auto">
                     <pre class="whitespace-pre-wrap">【シーン1: 朝の出社】
 撮影時間: 8:30-9:00
 目的: エンジニアの通勤風景とモーニングルーティン
@@ -137,43 +132,43 @@
 - テロップで時刻を表示</pre>
                 </div>
 
-                <h2 class="text-3xl font-bold text-slate-900 mb-4 mt-12">演出のポイント</h2>
-                <h3 class="text-2xl font-bold text-slate-800 mb-3 mt-8">1. カメラワークの工夫</h3>
-                <p class="text-slate-700 leading-relaxed mb-6">
+                <h2 class="text-3xl font-bold text-white mb-4 mt-12">演出のポイント</h2>
+                <h3 class="text-2xl font-bold text-slate-200 mb-3 mt-8">1. カメラワークの工夫</h3>
+                <p class="text-slate-300 leading-relaxed mb-6">
                     単調にならないよう、以下のカメラワークを意識しました：
                 </p>
-                <ul class="list-disc pl-6 space-y-3 text-slate-700 mb-6">
+                <ul class="list-disc pl-6 space-y-3 text-slate-300 mb-6">
                     <li>固定カメラとハンディカメラの使い分け</li>
                     <li>モニター画面の接写で作業内容を可視化</li>
                     <li>引きの画で職場の雰囲気を伝える</li>
                 </ul>
 
-                <h3 class="text-2xl font-bold text-slate-800 mb-3 mt-8">2. インタビューの挿入</h3>
-                <p class="text-slate-700 leading-relaxed mb-6">
+                <h3 class="text-2xl font-bold text-slate-200 mb-3 mt-8">2. インタビューの挿入</h3>
+                <p class="text-slate-300 leading-relaxed mb-6">
                     作業シーンの合間に、本人のインタビューを挿入することで、視聴者の理解を深めます。質問例：
                 </p>
-                <ul class="list-disc pl-6 space-y-3 text-slate-700 mb-6">
+                <ul class="list-disc pl-6 space-y-3 text-slate-300 mb-6">
                     <li>「今日はどんなタスクに取り組んでいますか？」</li>
                     <li>「この仕事の一番好きなところは？」</li>
                     <li>「エンジニアを目指す人へのアドバイスは？」</li>
                 </ul>
 
-                <h3 class="text-2xl font-bold text-slate-800 mb-3 mt-8">3. BGMとテンポ</h3>
-                <p class="text-slate-700 leading-relaxed mb-6">
+                <h3 class="text-2xl font-bold text-slate-200 mb-3 mt-8">3. BGMとテンポ</h3>
+                <p class="text-slate-300 leading-relaxed mb-6">
                     BGM選定は動画の印象を左右する重要な要素です。以下のような使い分けを行いました：
                 </p>
-                <ul class="list-disc pl-6 space-y-3 text-slate-700 mb-6">
-                    <li><strong>朝の出社</strong>：明るく爽やかなアコースティック</li>
-                    <li><strong>作業シーン</strong>：集中力を感じさせるローファイビート</li>
-                    <li><strong>ランチタイム</strong>：リラックスできるジャズ</li>
-                    <li><strong>退社</strong>：達成感のあるポップス</li>
+                <ul class="list-disc pl-6 space-y-3 text-slate-300 mb-6">
+                    <li><strong class="text-slate-100">朝の出社</strong>：明るく爽やかなアコースティック</li>
+                    <li><strong class="text-slate-100">作業シーン</strong>：集中力を感じさせるローファイビート</li>
+                    <li><strong class="text-slate-100">ランチタイム</strong>：リラックスできるジャズ</li>
+                    <li><strong class="text-slate-100">退社</strong>：達成感のあるポップス</li>
                 </ul>
 
-                <h2 class="text-3xl font-bold text-slate-900 mb-4 mt-12">AIプロンプトの活用</h2>
-                <p class="text-slate-700 leading-relaxed mb-6">
+                <h2 class="text-3xl font-bold text-white mb-4 mt-12">AIプロンプトの活用</h2>
+                <p class="text-slate-300 leading-relaxed mb-6">
                     編集段階では、ChatGPTを活用してテロップやキャプションの文章を作成しました。以下は実際に使用したプロンプトの例です：
                 </p>
-                <div class="bg-slate-800 text-slate-100 p-6 rounded-xl mb-6 font-mono text-sm overflow-x-auto">
+                <div class="bg-slate-900 border border-slate-700/50 text-slate-100 p-6 rounded-xl mb-6 font-mono text-sm overflow-x-auto">
                     <pre class="whitespace-pre-wrap">あなたはYouTube動画の編集者です。
 以下のシーンに適したテロップを3パターン作成してください。
 
@@ -187,39 +182,39 @@ PCを起動してメールチェックをしている様子
 - 絵文字を1つ含める</pre>
                 </div>
 
-                <h2 class="text-3xl font-bold text-slate-900 mb-4 mt-12">視聴者の反応と改善点</h2>
-                <p class="text-slate-700 leading-relaxed mb-6">
+                <h2 class="text-3xl font-bold text-white mb-4 mt-12">視聴者の反応と改善点</h2>
+                <p class="text-slate-300 leading-relaxed mb-6">
                     公開後、多くの視聴者から「リアルで共感できた」「就職活動の参考になった」というコメントをいただきました。一方で、以下のような改善点も見つかりました：
                 </p>
-                <ul class="list-disc pl-6 space-y-3 text-slate-700 mb-6">
+                <ul class="list-disc pl-6 space-y-3 text-slate-300 mb-6">
                     <li>専門用語の説明が不十分だった箇所がある</li>
                     <li>もっとプライベートの時間も見たいという要望</li>
                     <li>字幕のサイズが小さくて読みにくいという指摘</li>
                 </ul>
-                <p class="text-slate-700 leading-relaxed mb-6">
+                <p class="text-slate-300 leading-relaxed mb-6">
                     これらのフィードバックを次回作に活かしていきます。
                 </p>
 
-                <h2 class="text-3xl font-bold text-slate-900 mb-4 mt-12">まとめ</h2>
-                <p class="text-slate-700 leading-relaxed mb-6">
+                <h2 class="text-3xl font-bold text-white mb-4 mt-12">まとめ</h2>
+                <p class="text-slate-300 leading-relaxed mb-6">
                     「エンジニアのリアルな1日」の制作では、綿密なプロンプト設計と視聴者目線の演出が重要でした。AIツールも積極的に活用することで、効率的かつクオリティの高い動画を作ることができます。
                 </p>
-                <p class="text-slate-700 leading-relaxed mb-6">
+                <p class="text-slate-300 leading-relaxed mb-6">
                     皆さんもぜひ、このプロンプトを参考に動画制作にチャレンジしてみてください！
                 </p>
             </div>
 
             <!-- Share Buttons -->
-            <div class="mt-16 pt-8 border-t border-slate-200">
-                <h3 class="text-lg font-bold text-slate-900 mb-4">この記事をシェア</h3>
+            <div class="mt-16 pt-8 border-t border-slate-700/50">
+                <h3 class="text-lg font-bold text-white mb-4">この記事をシェア</h3>
                 <div class="flex gap-3">
                     <a href="#" class="px-6 py-3 bg-[#1DA1F2] text-white rounded-full hover:bg-[#1a8cd8] transition flex items-center gap-2">
                         <i class="fab fa-twitter"></i> Twitter
                     </a>
-                    <a href="#" class="px-6 py-3 bg-[#25D366] text-white rounded-full hover:bg-[#20ba5a] transition flex items-center gap-2">
+                    <a href="#" class="px-6 py-3 bg-[#06C755] text-white rounded-full hover:bg-[#05b04b] transition flex items-center gap-2">
                         <i class="fab fa-line"></i> LINE
                     </a>
-                    <a href="#" class="px-6 py-3 bg-slate-200 text-slate-700 rounded-full hover:bg-slate-300 transition flex items-center gap-2">
+                    <a href="#" class="px-6 py-3 bg-slate-800 text-slate-300 rounded-full hover:bg-slate-700 transition flex items-center gap-2 border border-slate-700/50">
                         <i class="fas fa-link"></i> リンクをコピー
                     </a>
                 </div>
@@ -227,7 +222,7 @@ PCを起動してメールチェックをしている様子
 
             <!-- Back to Blog List -->
             <div class="mt-12 text-center">
-                <a href="index.html#blog" class="inline-flex items-center text-brand font-semibold text-lg hover:text-brand-dark transition">
+                <a href="../index.html#blog" class="inline-flex items-center text-brand font-semibold text-lg hover:text-brand-light transition">
                     <i class="fas fa-arrow-left mr-2"></i> ブログ一覧に戻る
                 </a>
             </div>
@@ -235,20 +230,20 @@ PCを起動してメールチェックをしている様子
     </article>
 
     <!-- Footer -->
-    <footer class="bg-slate-900 text-slate-400 py-12 border-t border-slate-800">
+    <footer class="bg-brand-darker text-slate-500 py-12 border-t border-slate-800/50">
         <div class="container mx-auto px-6 text-center">
             <h2 class="text-2xl font-montserrat font-bold text-white mb-6">虎尾弩我流</h2>
             <p class="text-slate-400 mb-6">IT知識とリアルな社員トークをお届けする会社YouTubeチャンネル</p>
             <div class="flex justify-center space-x-6 mb-8 text-sm">
-                <a href="index.html#about" class="hover:text-brand transition">チャンネル紹介</a>
-                <a href="index.html#videos" class="hover:text-brand transition">動画</a>
-                <a href="index.html#members" class="hover:text-brand transition">メンバー</a>
-                <a href="index.html#blog" class="hover:text-brand transition">ブログ</a>
-                <a href="#" class="hover:text-brand transition">プライバシーポリシー</a>
-                <a href="#" class="hover:text-brand transition">お問い合わせ</a>
+                <a href="../index.html#about" class="text-slate-500 hover:text-brand transition">チャンネル紹介</a>
+                <a href="../index.html#videos" class="text-slate-500 hover:text-brand transition">動画</a>
+                <a href="../index.html#members" class="text-slate-500 hover:text-brand transition">メンバー</a>
+                <a href="../index.html#blog" class="text-slate-500 hover:text-brand transition">ブログ</a>
+                <a href="#" class="text-slate-500 hover:text-brand transition">プライバシーポリシー</a>
+                <a href="#" class="text-slate-500 hover:text-brand transition">お問い合わせ</a>
             </div>
             <p class="text-xs text-slate-600">
-                &copy; 2026 Engineer's Playground. All rights reserved.
+                &copy; 2026 Growth Link Inc.
             </p>
         </div>
     </footer>

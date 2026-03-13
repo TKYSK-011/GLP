@@ -16,16 +16,16 @@
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/style.css">
 
-    <!-- ★ tailwind.config は <head> 内 -->
     <script>
         tailwind.config = {
             theme: {
                 extend: {
                     colors: {
                         brand: {
-                            light: '#E0F2FE',
+                            light: '#7DD3FC',
                             DEFAULT: '#0EA5E9',
                             dark: '#0F172A',
+                            darker: '#080E1A',
                             accent: '#6366F1'
                         }
                     },
@@ -39,26 +39,23 @@
     </script>
 </head>
 
-<body class="bg-slate-50 text-slate-800 font-sans antialiased">
+<body class="bg-brand-dark text-slate-200 font-sans antialiased">
 
     <!-- Header / Navigation -->
     <header class="fixed w-full z-50 transition-all duration-300" id="main-header">
         <div class="container mx-auto px-6 py-4 flex justify-between items-center">
-            <a href="#"
-                class="text-2xl font-montserrat font-bold tracking-tighter text-white z-50 relative mix-blend-difference">虎尾弩我流</a>
+            <a href=""
+                class="text-2xl font-montserrat font-bold tracking-tighter text-white z-50 relative mix-blend-difference">
+                <rb>虎尾弩我流</rb>
+                <rp>こおどがりゅう</rp>
+            </a>
 
             <!-- Desktop Nav -->
             <nav class="hidden md:flex space-x-8">
-                <a href="#about"
-                    class="text-white hover:text-brand-light transition duration-300 font-medium text-sm tracking-wide mix-blend-difference">チャンネル紹介</a>
                 <a href="#videos"
                     class="text-white hover:text-brand-light transition duration-300 font-medium text-sm tracking-wide mix-blend-difference">動画</a>
-                <a href="#members"
-                    class="text-white hover:text-brand-light transition duration-300 font-medium text-sm tracking-wide mix-blend-difference">メンバー</a>
                 <a href="#blog"
                     class="text-white hover:text-brand-light transition duration-300 font-medium text-sm tracking-wide mix-blend-difference">ブログ</a>
-                <a href="#cta"
-                    class="text-white hover:text-brand-light transition duration-300 font-medium text-sm tracking-wide mix-blend-difference">登録</a>
             </nav>
 
             <!-- Mobile Menu Button -->
@@ -69,12 +66,9 @@
 
         <!-- Mobile Nav Overlay -->
         <div id="mobile-menu"
-            class="fixed inset-0 bg-brand-dark/95 backdrop-blur-md transform translate-x-full transition-transform duration-300 flex flex-col justify-center items-center space-y-8 md:hidden">
-            <a href="#about" class="text-white text-2xl font-montserrat hover:text-brand transition">チャンネル紹介</a>
+            class="fixed inset-0 bg-brand-darker/95 backdrop-blur-md transform translate-x-full transition-transform duration-300 flex flex-col justify-center items-center space-y-8 md:hidden">
             <a href="#videos" class="text-white text-2xl font-montserrat hover:text-brand transition">動画</a>
-            <a href="#members" class="text-white text-2xl font-montserrat hover:text-brand transition">メンバー</a>
             <a href="#blog" class="text-white text-2xl font-montserrat hover:text-brand transition">ブログ</a>
-            <a href="#cta" class="text-white text-2xl font-montserrat hover:text-brand transition">登録</a>
         </div>
     </header>
 
@@ -85,8 +79,8 @@
             <video autoplay muted loop playsinline class="w-full h-full object-cover">
                 <source src="videos/hero_bg.mp4" type="video/mp4">
             </video>
-            <div class="absolute inset-0 bg-gradient-to-b from-brand-dark/30 to-slate-900/60 mix-blend-multiply"></div>
-            <div class="absolute inset-0 bg-blue-900/20"></div>
+            <div class="absolute inset-0 bg-gradient-to-b from-brand-darker/50 to-brand-dark/80 mix-blend-multiply"></div>
+            <div class="absolute inset-0 bg-blue-950/30"></div>
         </div>
 
         <!-- Content -->
@@ -95,35 +89,25 @@
                 class="text-6xl md:text-8xl font-montserrat font-extrabold text-white mb-4 tracking-tight drop-shadow-lg">
                 虎尾弩我流
             </h1>
-            <p class="text-xl md:text-2xl text-blue-100 font-light tracking-widest mb-8">
+            <p class="text-xl md:text-2xl text-blue-200 font-light tracking-widest mb-8">
                 こおどがりゅう
             </p>
-            <!-- <div class="flex justify-center space-x-6">
-                <a href="#about"
-                    class="px-8 py-3 bg-white/10 backdrop-blur-sm border border-white/50 text-white hover:bg-white hover:text-brand-dark transition duration-300 rounded-full font-medium">
-                    もっと知る
-                </a>
-                <a href="https://youtube.com" target="_blank"
-                    class="px-8 py-3 bg-brand hover:bg-brand-accent text-white transition duration-300 rounded-full font-medium shadow-lg shadow-blue-500/30">
-                    <i class="fab fa-youtube mr-2"></i> 最新動画を見る
-                </a>
-            </div> -->
         </div>
 
         <!-- Scroll Indicator -->
         <div class="absolute bottom-10 left-1/2 transform -translate-x-1/2 animate-bounce">
-            <i class="fas fa-chevron-down text-white/70 text-2xl"></i>
+            <i class="fas fa-chevron-down text-white/50 text-2xl"></i>
         </div>
     </section>
 
     <!-- 2. About Section -->
-    <section id="about" class="py-24 bg-brand-dark text-white relative overflow-hidden">
+    <section id="about" class="py-24 bg-brand-darker text-white relative overflow-hidden">
         <!-- Abstract Decoration -->
         <div
-            class="absolute top-0 right-0 w-96 h-96 bg-brand opacity-10 rounded-full blur-3xl transform translate-x-1/2 -translate-y-1/2">
+            class="absolute top-0 right-0 w-96 h-96 bg-brand opacity-5 rounded-full blur-3xl transform translate-x-1/2 -translate-y-1/2">
         </div>
         <div
-            class="absolute bottom-0 left-0 w-64 h-64 bg-purple-500 opacity-10 rounded-full blur-3xl transform -translate-x-1/2 translate-y-1/2">
+            class="absolute bottom-0 left-0 w-64 h-64 bg-purple-500 opacity-5 rounded-full blur-3xl transform -translate-x-1/2 translate-y-1/2">
         </div>
 
         <div class="container mx-auto px-6 relative z-10">
@@ -131,10 +115,10 @@
 
                 <!-- ★ 左エリア：会社説明 -->
                 <div class="max-w-sm text-center lg:text-left flex-1">
-                    <h2 class="text-4xl font-montserrat font-bold mb-2">株式会社グロースリンク</h2>
+                    <h2 class="text-4xl font-montserrat font-bold mb-2 text-white">株式会社グロースリンク</h2>
                     <p class="text-brand text-lg mb-6 tracking-widest font-light">会社紹介</p>
 
-                    <div class="space-y-4 text-slate-300 leading-relaxed">
+                    <div class="space-y-4 text-slate-400 leading-relaxed">
                         <p>
                             グロースリンクは、ITエンジニアリングとAIソリューションを軸に、企業の成長を支援する会社です。最先端の技術力と柔軟な発想で、お客様のビジネス課題を解決します。
                         </p>
@@ -149,13 +133,13 @@
                     class="flex-shrink-0 flex items-center justify-center group/logo">
                     <div class="w-64 h-64 lg:w-72 lg:h-72 relative hover:scale-105 transition-transform duration-300">
                         <div
-                            class="absolute inset-0 border-2 border-brand rounded-full transform rotate-6 scale-105 opacity-50 group-hover/logo:opacity-80 group-hover/logo:border-white transition duration-300">
+                            class="absolute inset-0 border-2 border-brand rounded-full transform rotate-6 scale-105 opacity-50 group-hover/logo:opacity-80 group-hover/logo:border-brand-light transition duration-300">
                         </div>
                         <div
-                            class="absolute inset-0 border-2 border-white rounded-full transform -rotate-3 scale-105 opacity-30 group-hover/logo:opacity-60 transition duration-300">
+                            class="absolute inset-0 border-2 border-slate-500 rounded-full transform -rotate-3 scale-105 opacity-30 group-hover/logo:opacity-60 transition duration-300">
                         </div>
                         <div
-                            class="w-full h-full rounded-full overflow-hidden border-4 border-slate-800 group-hover/logo:border-brand shadow-2xl group-hover/logo:shadow-brand/30 relative bg-brand-dark flex items-center justify-center transition-all duration-300">
+                            class="w-full h-full rounded-full overflow-hidden border-4 border-slate-700 group-hover/logo:border-brand shadow-2xl group-hover/logo:shadow-brand/40 relative bg-brand-darker flex items-center justify-center transition-all duration-300">
                             <img src="images/company_logo.png" alt="Growth Link ロゴ" class="w-3/4 h-3/4 object-contain">
                         </div>
                     </div>
@@ -163,10 +147,10 @@
 
                 <!-- ★ 右エリア：虎尾弩我流チャンネル紹介 -->
                 <div class="max-w-sm text-center lg:text-left flex-1">
-                    <h2 class="text-4xl font-montserrat font-bold mb-2">虎尾弩我流</h2>
+                    <h2 class="text-4xl font-montserrat font-bold mb-2 text-white">虎尾弩我流</h2>
                     <p class="text-brand text-lg mb-6 tracking-widest font-light">会社YouTubeチャンネル</p>
 
-                    <div class="space-y-4 text-slate-300 leading-relaxed">
+                    <div class="space-y-4 text-slate-400 leading-relaxed">
                         <p>
                             このチャンネルでは、エンジニアと営業の会社員が時間を作って遊ぶチャンネルです。IT用語解説からリアルな社員トーク、AI知識まで、幅広いコンテンツをお届けしています。
                         </p>
@@ -181,15 +165,15 @@
             <!-- ★ SNSリンク（統一・中央揃え） -->
             <div class="flex flex-wrap justify-center gap-5 mt-16">
                 <a href="https://lin.ee/TYux5hR"
-                    class="w-12 h-12 rounded-full bg-slate-700 flex items-center justify-center hover:bg-[#06C755] hover:text-white transition duration-300">
+                    class="w-12 h-12 rounded-full bg-slate-800 flex items-center justify-center hover:bg-[#06C755] hover:text-white transition duration-300 text-slate-400">
                     <i class="fab fa-line text-xl"></i>
                 </a>
                 <a href="https://www.youtube.com/@%E6%A0%AA%E5%BC%8F%E4%BC%9A%E7%A4%BE%E3%82%B0%E3%83%AD%E3%83%BC%E3%82%B9%E3%83%AA%E3%83%B3%E3%82%AF"
-                    class="w-12 h-12 rounded-full bg-slate-700 flex items-center justify-center hover:bg-[#FF0000] hover:text-white transition duration-300">
+                    class="w-12 h-12 rounded-full bg-slate-800 flex items-center justify-center hover:bg-[#FF0000] hover:text-white transition duration-300 text-slate-400">
                     <i class="fab fa-youtube text-xl"></i>
                 </a>
                 <a href="https://www.instagram.com/growthlink2021/"
-                    class="w-12 h-12 rounded-full bg-slate-700 flex items-center justify-center hover:bg-pink-500 hover:text-white transition duration-300">
+                    class="w-12 h-12 rounded-full bg-slate-800 flex items-center justify-center hover:bg-pink-500 hover:text-white transition duration-300 text-slate-400">
                     <i class="fab fa-instagram text-xl"></i>
                 </a>
             </div>
@@ -200,49 +184,44 @@
 
 
     <!-- 3. Videos Section -->
-    <section id="videos" class="py-24 bg-white relative">
+    <section id="videos" class="py-24 bg-brand-dark relative">
         <div class="container mx-auto px-6">
             <div class="text-center mb-16">
-                <h2 class="text-4xl md:text-5xl font-montserrat font-bold text-brand-dark mb-4">おすすめ動画</h2>
+                <h2 class="text-4xl md:text-5xl font-montserrat font-bold text-white mb-4">おすすめ動画</h2>
                 <div class="w-20 h-1 bg-brand mx-auto"></div>
-                <p class="mt-4 text-slate-500">中途採用募集動画やAI関連動画、イかれた動画など<br>さまざまなジャンルの動画を不定期で投稿しております！</p>
+                <p class="mt-4 text-slate-400">中途採用募集動画やAI関連動画、イかれた動画など<br>さまざまなジャンルの動画を不定期で投稿しております！</p>
             </div>
 
             <div>
                 <!-- Grid Container -->
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
 
-                    <!-- Video 1: 指定されたURL (自動取得) -->
+                    <!-- Video 1 -->
                     <a href="#" data-youtube-url="https://youtu.be/lk-hWIJAFN4?si=YDu43izPxjL4KiQS" target="_blank"
-                        class="js-youtube-card block bg-slate-50 rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition duration-300 border border-slate-100 group">
+                        class="js-youtube-card block bg-slate-800/50 rounded-2xl overflow-hidden shadow-lg hover:shadow-brand/20 transition duration-300 border border-slate-700/50 hover:border-brand/50 group">
 
                         <div
-                            class="aspect-video bg-slate-800 relative flex items-center justify-center overflow-hidden">
+                            class="aspect-video bg-slate-900 relative flex items-center justify-center overflow-hidden">
                             <img src="" alt="Loading..."
                                 class="js-youtube-thumb absolute inset-0 w-full h-full object-cover transition duration-500 group-hover:scale-110 opacity-0">
-
-                            <!-- 黒いオーバーレイ -->
                             <div class="absolute inset-0 bg-black/40 group-hover:bg-black/20 transition duration-300">
                             </div>
-
-                            <!-- 再生ボタン -->
                             <i
                                 class="fas fa-play text-5xl text-white relative z-10 opacity-90 group-hover:scale-110 transition duration-300"></i>
                         </div>
 
                         <div class="p-5">
-                            <!-- タイトル (自動で置き換わります) -->
                             <h4
-                                class="js-youtube-title text-lg font-bold text-slate-800 mb-2 group-hover:text-blue-600 transition">
+                                class="js-youtube-title text-lg font-bold text-slate-200 mb-2 group-hover:text-brand transition">
                                 動画情報を取得中...</h4>
                         </div>
                     </a>
 
-                    <!-- Video 2: 別の動画を追加する場合の例 -->
+                    <!-- Video 2 -->
                     <a href="#" data-youtube-url="https://youtu.be/Yh_k8ZUOA4k?si=PvDUlyYV5v-j6F7l" target="_blank"
-                        class="js-youtube-card block bg-slate-50 rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition duration-300 border border-slate-100 group">
+                        class="js-youtube-card block bg-slate-800/50 rounded-2xl overflow-hidden shadow-lg hover:shadow-brand/20 transition duration-300 border border-slate-700/50 hover:border-brand/50 group">
                         <div
-                            class="aspect-video bg-slate-800 relative flex items-center justify-center overflow-hidden">
+                            class="aspect-video bg-slate-900 relative flex items-center justify-center overflow-hidden">
                             <img src="" alt="Loading..."
                                 class="js-youtube-thumb absolute inset-0 w-full h-full object-cover transition duration-500 group-hover:scale-110 opacity-0">
                             <div class="absolute inset-0 bg-black/40 group-hover:bg-black/20 transition duration-300">
@@ -252,16 +231,16 @@
                         </div>
                         <div class="p-5">
                             <h4
-                                class="js-youtube-title text-lg font-bold text-slate-800 mb-2 group-hover:text-blue-600 transition">
+                                class="js-youtube-title text-lg font-bold text-slate-200 mb-2 group-hover:text-brand transition">
                                 動画情報を取得中...</h4>
                         </div>
                     </a>
 
-                    <!-- Video 3: 別の動画を追加する場合の例 -->
+                    <!-- Video 3 -->
                     <a href="#" data-youtube-url="https://youtu.be/900bmFcoR3c?si=aeRklji-lo4Ah5RN" target="_blank"
-                        class="js-youtube-card block bg-slate-50 rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition duration-300 border border-slate-100 group">
+                        class="js-youtube-card block bg-slate-800/50 rounded-2xl overflow-hidden shadow-lg hover:shadow-brand/20 transition duration-300 border border-slate-700/50 hover:border-brand/50 group">
                         <div
-                            class="aspect-video bg-slate-800 relative flex items-center justify-center overflow-hidden">
+                            class="aspect-video bg-slate-900 relative flex items-center justify-center overflow-hidden">
                             <img src="" alt="Loading..."
                                 class="js-youtube-thumb absolute inset-0 w-full h-full object-cover transition duration-500 group-hover:scale-110 opacity-0">
                             <div class="absolute inset-0 bg-black/40 group-hover:bg-black/20 transition duration-300">
@@ -271,7 +250,7 @@
                         </div>
                         <div class="p-5">
                             <h4
-                                class="js-youtube-title text-lg font-bold text-slate-800 mb-2 group-hover:text-blue-600 transition">
+                                class="js-youtube-title text-lg font-bold text-slate-200 mb-2 group-hover:text-brand transition">
                                 動画情報を取得中...</h4>
                         </div>
                     </a>
@@ -282,7 +261,7 @@
             <div class="text-center mt-12">
                 <a href="https://www.youtube.com/@%E6%A0%AA%E5%BC%8F%E4%BC%9A%E7%A4%BE%E3%82%B0%E3%83%AD%E3%83%BC%E3%82%B9%E3%83%AA%E3%83%B3%E3%82%AF"
                     target="_blank"
-                    class="px-8 py-3 border-2 border-[#FF0000] text-[#FF0000] font-bold rounded-full hover:bg-[#FF0000] hover:text-white transition duration-300 shadow-sm hover:shadow-md inline-flex items-center">
+                    class="px-8 py-3 border-2 border-[#FF0000] text-[#FF0000] font-bold rounded-full hover:bg-[#FF0000] hover:text-white transition duration-300 shadow-sm hover:shadow-red-500/30 inline-flex items-center">
                     <i class="fab fa-youtube mr-2"></i> YouTubeチャンネルへ
                 </a>
             </div>
@@ -298,35 +277,27 @@
                 const url = card.getAttribute('data-youtube-url');
                 if (!url || url.includes('dummy_url')) return;
 
-                // リンク先を設定
                 card.setAttribute('href', url);
 
-                // 動画IDを抽出
                 const videoId = extractVideoId(url);
 
-                // APIからタイトルを取得
                 fetch(`https://noembed.com/embed?url=${url}`)
                     .then(response => response.json())
                     .then(data => {
-                        // タイトル設定
                         const titleEl = card.querySelector('.js-youtube-title');
                         if (titleEl && data.title) titleEl.textContent = data.title;
                     })
                     .catch(err => console.error("API Error:", err));
 
-                // サムネイル設定（ここを強化しました）
                 const thumbEl = card.querySelector('.js-youtube-thumb');
                 if (thumbEl && videoId) {
-                    // ステップ1: まず最高画質(maxresdefault)を試す
                     const highResUrl = `https://img.youtube.com/vi/${videoId}/maxresdefault.jpg`;
-                    const standardUrl = `https://img.youtube.com/vi/${videoId}/hqdefault.jpg`; // バックアップ用
+                    const standardUrl = `https://img.youtube.com/vi/${videoId}/hqdefault.jpg`;
 
-                    // 画像の存在チェックを行うための新しいImageオブジェクトを作成
                     const imgCheck = new Image();
                     imgCheck.src = highResUrl;
 
                     imgCheck.onload = function () {
-                        // widthが120の場合は「画像なし」のプレースホルダーなので、標準画質に切り替え
                         if (this.width === 120) {
                             thumbEl.src = standardUrl;
                         } else {
@@ -336,7 +307,6 @@
                     };
 
                     imgCheck.onerror = function () {
-                        // 読み込みエラーなら標準画質に切り替え
                         thumbEl.src = standardUrl;
                         thumbEl.classList.remove('opacity-0');
                     };
@@ -351,41 +321,38 @@
         });
     </script>
 
+
     <!-- 4. Members Section -->
-    <section id="members" class="py-24 bg-slate-50">
+    <section id="members" class="py-24 bg-brand-darker">
         <div class="container mx-auto px-6">
             <div class="text-center mb-16">
-                <h2 class="text-4xl md:text-5xl font-montserrat font-bold text-brand-dark mb-4">出演メンバー</h2>
+                <h2 class="text-4xl md:text-5xl font-montserrat font-bold text-white mb-4">出演メンバー</h2>
                 <div class="w-20 h-1 bg-brand mx-auto"></div>
-                <p class="mt-4 text-slate-500">チャンネルを盛り上げるメンバー紹介</p>
+                <p class="mt-4 text-slate-400">チャンネルを盛り上げるメンバー紹介</p>
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-4 max-w-6xl mx-auto">
-                <!-- Member 1 -->
-                <div
-                    class="bg-white rounded-2xl shadow-sm hover:shadow-lg transition duration-300 p-8 text-center group">
-                    <div
-                        class="w-32 h-32 mx-auto mb-4 rounded-full bg-gradient-to-br from-blue-500 to-purple-600 flex items-center justify-center shadow-lg">
-                        <i class="fas fa-user-tie text-5xl text-white"></i>
+                <!-- Member 1：田村 -->
+                <div class="bg-slate-800/50 border border-slate-700/50 rounded-2xl shadow-sm transition duration-300 p-8 text-center group">
+                    <div class="w-32 h-32 mx-auto mb-4 rounded-full overflow-hidden shadow-lg ring-2 ring-brand/30">
+                        <img src="images/member_tamura.png" alt="田村" class="w-full h-full object-cover">
                     </div>
-                    <h3 class="text-xl font-bold text-slate-800 mb-1">田村</h3>
+                    <h3 class="text-xl font-bold text-white mb-1">田村</h3>
                     <p class="text-brand text-sm mb-3 font-semibold">採用広報・Youtube企画出演編集</p>
-                    <p class="text-slate-500 text-sm mb-4 leading-relaxed">
+                    <p class="text-slate-400 text-sm mb-4 leading-relaxed">
                         会社の万事屋担当。食欲セーブできずに爆食して後悔の日々。<br>あと早口直したい。
                     </p>
                 </div>
 
-                <!-- Member 2 -->
-                <div
-                    class="bg-white rounded-2xl shadow-sm hover:shadow-lg transition duration-300 p-8 text-center group">
-                    <div
-                        class="w-32 h-32 mx-auto mb-4 rounded-full bg-gradient-to-br from-pink-500 to-rose-600 flex items-center justify-center shadow-lg">
-                        <i class="fas fa-user-circle text-5xl text-white"></i>
+                <!-- Member 2：長谷川 -->
+                <div class="bg-slate-800/50 border border-slate-700/50 rounded-2xl shadow-sm transition duration-300 p-8 text-center group">
+                    <div class="w-32 h-32 mx-auto mb-4 rounded-full overflow-hidden shadow-lg ring-2 ring-brand/30">
+                        <img src="images/member_hasegawa.png" alt="長谷川" class="w-full h-full object-cover">
                     </div>
-                    <h3 class="text-xl font-bold text-slate-800 mb-1">長谷川</h3>
+                    <h3 class="text-xl font-bold text-white mb-1">長谷川</h3>
                     <p class="text-brand text-sm mb-3 font-semibold">エンジニア・Youtube企画出演編集</p>
-                    <p class="text-slate-500 text-sm mb-4 leading-relaxed">
-                        「技術と人を繋げるのが仕事です！」
+                    <p class="text-slate-400 text-sm mb-4 leading-relaxed">
+                        最近グロースリンクに仲間入りした人。今年の抱負は「アダルトセクシーになる」
                     </p>
                 </div>
 
@@ -393,22 +360,22 @@
         </div>
     </section>
 
+
     <!-- 5. Blog Section -->
-    <section id="blog" class="py-24 bg-white relative">
+    <section id="blog" class="py-24 bg-brand-dark relative">
         <div class="container mx-auto px-6">
             <div class="text-center mb-16">
-                <h2 class="text-4xl md:text-5xl font-montserrat font-bold text-brand-dark mb-4">動画プロンプトブログ</h2>
+                <h2 class="text-4xl md:text-5xl font-montserrat font-bold text-white mb-4">動画プロンプトブログ</h2>
                 <div class="w-20 h-1 bg-brand mx-auto"></div>
-                <p class="mt-4 text-slate-500">動画制作の舞台裏とプロンプト解説</p>
+                <p class="mt-4 text-slate-400">動画制作の舞台裏とプロンプト解説</p>
             </div>
 
             <div class="max-w-5xl mx-auto space-y-6">
                 <!-- Blog Item 1 -->
                 <a href="templates/blog-001.html"
-                    class="block bg-slate-50 hover:bg-white border border-slate-100 hover:border-brand rounded-2xl p-6 transition duration-300 shadow-sm hover:shadow-lg group">
+                    class="block bg-slate-800/50 hover:bg-slate-800 border border-slate-700/50 hover:border-brand/50 rounded-2xl p-6 transition duration-300 shadow-sm hover:shadow-brand/10 group">
                     <div class="flex flex-col md:flex-row gap-6 items-start">
-                        <!-- ★ YouTubeサムネイル表示 -->
-                        <div class="flex-shrink-0 w-full md:w-64 h-40 rounded-xl overflow-hidden relative bg-black">
+                        <div class="flex-shrink-0 w-full md:w-64 h-40 rounded-xl overflow-hidden relative bg-slate-900">
                             <img data-youtube-id="900bmFcoR3c" src="https://i.ytimg.com/vi/900bmFcoR3c/hqdefault.jpg"
                                 alt="YouTubeサムネイル" class="w-full h-full object-cover">
                         </div>
@@ -419,72 +386,21 @@
                                 <span class="text-slate-500 text-sm"><i
                                         class="far fa-calendar mr-1"></i>2026.03.06</span>
                             </div>
-                            <!-- ★ YouTubeタイトル自動表示 -->
-                            <h3 class="text-2xl font-bold text-slate-800 group-hover:text-brand transition mb-3"
+                            <h3 class="text-2xl font-bold text-slate-200 group-hover:text-brand transition mb-3"
                                 data-youtube-title="900bmFcoR3c">
                                 動画情報を取得中...</h3>
-                            <p class="text-slate-600 leading-relaxed line-clamp-2">
+                            <p class="text-slate-400 leading-relaxed line-clamp-2">
                                 動画内で実際に使用したプロンプトの解説記事です。
                                 動画制作の各フェーズでどのようなプロンプトを使っているのか、具体例とともに紹介します。
                             </p>
                         </div>
                     </div>
                 </a>
-
-                <!-- Blog Item 2 -->
-                <!-- <a href="templates/blog-002.html"
-                    class="block bg-slate-50 hover:bg-white border border-slate-100 hover:border-brand rounded-2xl p-6 transition duration-300 shadow-sm hover:shadow-lg group">
-                    <div class="flex flex-col md:flex-row gap-6 items-start">
-                        <div class="flex-shrink-0 w-full md:w-64 h-40 rounded-xl overflow-hidden relative bg-black">
-                            <img data-youtube-id="900bmFcoR3c" src="https://i.ytimg.com/vi/900bmFcoR3c/hqdefault.jpg"
-                                alt="YouTubeサムネイル" class="w-full h-full object-cover">
-                        </div>
-                        <div class="flex-grow">
-                            <div class="flex items-center gap-3 mb-3">
-                                <span
-                                    class="px-3 py-1 bg-purple-600 text-white text-xs font-bold rounded-full">インタビュー</span>
-                                <span class="text-slate-500 text-sm"><i
-                                        class="far fa-calendar mr-1"></i>2026.01.15</span>
-                            </div>
-                            <h3 class="text-2xl font-bold text-slate-800 group-hover:text-brand transition mb-3"
-                                data-youtube-title="900bmFcoR3c">
-                                動画情報を取得中...</h3>
-                            <p class="text-slate-600 leading-relaxed line-clamp-2">
-                                視聴者が知りたい「本音」を引き出すための質問設計プロンプトを公開。緊張をほぐすアイスブレイクから、核心に迫る質問まで、段階的なインタビュー構成のノウハウを解説します。
-                            </p>
-                        </div>
-                    </div>
-                </a> -->
-
-                <!-- Blog Item 3 -->
-                <!-- <a href="templates/blog-003.html"
-                    class="block bg-slate-50 hover:bg-white border border-slate-100 hover:border-brand rounded-2xl p-6 transition duration-300 shadow-sm hover:shadow-lg group">
-                    <div class="flex flex-col md:flex-row gap-6 items-start">
-                        <div class="flex-shrink-0 w-full md:w-64 h-40 rounded-xl overflow-hidden relative bg-black">
-                            <img data-youtube-id="900bmFcoR3c" src="https://i.ytimg.com/vi/900bmFcoR3c/hqdefault.jpg"
-                                alt="YouTubeサムネイル" class="w-full h-full object-cover">
-                        </div>
-                        <div class="flex-grow">
-                            <div class="flex items-center gap-3 mb-3">
-                                <span
-                                    class="px-3 py-1 bg-emerald-600 text-white text-xs font-bold rounded-full">ドキュメンタリー</span>
-                                <span class="text-slate-500 text-sm"><i
-                                        class="far fa-calendar mr-1"></i>2026.01.10</span>
-                            </div>
-                            <h3 class="text-2xl font-bold text-slate-800 group-hover:text-brand transition mb-3"
-                                data-youtube-title="900bmFcoR3c">
-                                動画情報を取得中...</h3>
-                            <p class="text-slate-600 leading-relaxed line-clamp-2">
-                                リモートワークの実態を伝える動画制作で重要な「日常感」の演出方法を解説。在宅ならではの撮影環境の工夫、自然な表情を引き出すディレクション、視聴者を飽きさせないカット割りのテクニックを紹介。
-                            </p>
-                        </div>
-                    </div>
-                </a> -->
             </div>
 
             <div class="text-center mt-12">
                 <a href="blog-list.html"
-                    class="inline-flex items-center text-brand font-semibold text-lg hover:text-brand-dark transition">
+                    class="inline-flex items-center text-brand font-semibold text-lg hover:text-brand-light transition">
                     ブログ一覧を見る <i class="fas fa-arrow-right ml-2"></i>
                 </a>
             </div>
@@ -493,74 +409,36 @@
 
 
     <!-- 6. CTA Section -->
-    <section id="cta" class="py-24 bg-slate-50 relative">
+    <section id="cta" class="py-24 bg-brand-darker relative">
         <div class="container mx-auto px-6">
             <div class="text-center mb-16">
                 <div
-                    class="w-20 h-20 mx-auto mb-6 rounded-full bg-gradient-to-br from-red-500 to-pink-600 flex items-center justify-center shadow-lg">
+                    class="w-20 h-20 mx-auto mb-6 rounded-full bg-gradient-to-br from-red-500 to-pink-600 flex items-center justify-center shadow-lg shadow-red-500/20">
                     <i class="fas fa-heart text-4xl text-white"></i>
                 </div>
-                <h2 class="text-4xl md:text-5xl font-montserrat font-bold text-brand-dark mb-4">ここまでご覧いただき<br
+                <h2 class="text-4xl md:text-5xl font-montserrat font-bold text-white mb-4">ここまでご覧いただき<br
                         class="md:hidden">ありがとうございます</h2>
                 <div class="w-20 h-1 bg-brand mx-auto"></div>
             </div>
 
-            <div class="max-w-3xl mx-auto">
-                <p class="text-lg text-slate-600 leading-relaxed mb-8">
-                    このチャンネルでは、IT業界のリアルな姿と役立つ知識をお届けしています。<br class="hidden md:block">
-                    エンジニア志望の方、IT業界に興味がある方、ぜひチャンネル登録して<br class="hidden md:block">
-                    私たちと一緒に学び、楽しみましょう！
+            <div class="max-w-3xl mx-auto text-center">
+                <p class="text-lg text-slate-400 leading-relaxed mb-8">
+                    AI時代の加速によって、「なにが良くてどれが安全なAIなの？」と日々考えます。<br class="hidden md:block"><br>
+                    一緒に見て、<br>
+                    一緒に学んで、<br>
+                    一緒に遊んで、<br>
+                    一緒に成長する。<br><br>
+                    そんなチャンネルを作っていけたらなと考えております！<br>
+                    チャンネル登録、高評価、コメントなどで応援していただけると本当に励みになります！<br>
                 </p>
-
-                <div class="flex flex-col md:flex-row justify-center items-center gap-4 mb-12">
-                    <a href="https://youtube.com" target="_blank"
-                        class="px-8 py-4 bg-red-600 hover:bg-red-700 text-white font-bold rounded-full transition duration-300 shadow-lg hover:shadow-xl flex items-center text-lg">
-                        <i class="fab fa-youtube mr-3 text-2xl"></i> チャンネル登録する
-                    </a>
-                    <a href="#"
-                        class="px-8 py-4 border-2 border-brand text-brand font-bold rounded-full hover:bg-brand hover:text-white transition duration-300 flex items-center">
-                        <i class="fas fa-building mr-2"></i> 会社HPを見る
-                    </a>
-                    <a href="#"
-                        class="px-8 py-4 border-2 border-purple-600 text-purple-600 font-bold rounded-full hover:bg-purple-600 hover:text-white transition duration-300 flex items-center">
-                        <i class="fas fa-briefcase mr-2"></i> 採用情報を見る
-                    </a>
-                </div>
-
-                <div class="border-t border-slate-200 pt-8">
-                    <p class="text-slate-500 mb-4 font-semibold">Follow Us</p>
-                    <div class="flex justify-center space-x-4">
-                        <a href="#"
-                            class="w-12 h-12 rounded-full bg-slate-100 hover:bg-[#1DA1F2] hover:text-white flex items-center justify-center transition duration-300 text-xl">
-                            <i class="fab fa-twitter"></i>
-                        </a>
-                        <a href="#"
-                            class="w-12 h-12 rounded-full bg-slate-100 hover:bg-pink-600 hover:text-white flex items-center justify-center transition duration-300 text-xl">
-                            <i class="fab fa-instagram"></i>
-                        </a>
-                        <a href="#"
-                            class="w-12 h-12 rounded-full bg-slate-100 hover:bg-[#0077B5] hover:text-white flex items-center justify-center transition duration-300 text-xl">
-                            <i class="fab fa-linkedin"></i>
-                        </a>
-                    </div>
-                </div>
             </div>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer class="bg-slate-900 text-slate-400 py-12 border-t border-slate-800">
+    <footer class="bg-brand-darker text-slate-500 py-12 border-t border-slate-800/50">
         <div class="container mx-auto px-6 text-center">
             <h2 class="text-2xl font-montserrat font-bold text-white mb-6">虎尾弩我流</h2>
-            <p class="text-slate-400 mb-6">IT知識とリアルな社員トークをお届けする会社YouTubeチャンネル</p>
-            <div class="flex justify-center space-x-6 mb-8 text-sm">
-                <a href="#about" class="hover:text-brand transition">チャンネル紹介</a>
-                <a href="#videos" class="hover:text-brand transition">動画</a>
-                <a href="#members" class="hover:text-brand transition">メンバー</a>
-                <a href="#blog" class="hover:text-brand transition">ブログ</a>
-                <a href="#" class="hover:text-brand transition">プライバシーポリシー</a>
-                <a href="#" class="hover:text-brand transition">お問い合わせ</a>
-            </div>
             <p class="text-xs text-slate-600">
                 &copy; 2026 Growth Link Inc.
             </p>
@@ -570,8 +448,6 @@
     <!-- Scripts -->
     <script src="js/main.js"></script>
 
-
-    <!-- ★ すべてのスクリプトは </body> 直前にまとめる -->
     <script>
         // ========================================
         // ヘッダー背景切り替え（スクロール検知）
@@ -581,9 +457,9 @@
 
         window.addEventListener('scroll', () => {
             if (window.scrollY >= hero.offsetHeight) {
-                header.classList.add('bg-black');
+                header.classList.add('bg-brand-darker/95', 'backdrop-blur-md');
             } else {
-                header.classList.remove('bg-black');
+                header.classList.remove('bg-brand-darker/95', 'backdrop-blur-md');
             }
         });
 
@@ -599,7 +475,6 @@
                 mobileMenu.classList.toggle('translate-x-0');
             });
 
-            // メニュー内のリンクをクリックしたら閉じる
             mobileMenu.querySelectorAll('a').forEach(link => {
                 link.addEventListener('click', () => {
                     mobileMenu.classList.add('translate-x-full');
@@ -612,17 +487,13 @@
         // YouTube oEmbed APIでタイトルを自動取得
         // ========================================
         (function () {
-            // data-youtube-title 属性を持つ要素を全て取得
             const titleElements = document.querySelectorAll('[data-youtube-title]');
-
-            // 同じ動画IDは1回だけ取得するようにキャッシュ
             const cache = {};
 
             titleElements.forEach(el => {
                 const videoId = el.getAttribute('data-youtube-title');
                 if (!videoId) return;
 
-                // キャッシュにあればそれを使う
                 if (cache[videoId]) {
                     cache[videoId].then(title => {
                         el.textContent = title;
@@ -630,7 +501,6 @@
                     return;
                 }
 
-                // oEmbed APIからタイトルを取得
                 cache[videoId] = fetch(`https://www.youtube.com/oembed?url=https://www.youtube.com/watch?v=${videoId}&format=json`)
                     .then(res => res.json())
                     .then(data => {
